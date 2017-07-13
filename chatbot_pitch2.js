@@ -42,7 +42,7 @@ function voiceUI() {
   botui.message.add({
     delay: genDelay,
     human: false,
-    content: "Okay, the basic concept here is that today's voice interface's are skeuomorphic. They're being held back by trying to behave *too much like humans*."
+    content: "Okay, the basic concept here is that today's voice interfaces are skeuomorphic. They're being held back by trying to behave *too much like humans*."
   }).then(function(){
     botui.message.add({
       delay: longDelay,
