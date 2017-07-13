@@ -216,14 +216,14 @@ function hearAbout() {
       if ((theAnswer == "1") || /voice|inter|act|human/.test(theAnswer) ) {
         voiceUI();
         return;
-      }
-      if ((theAnswer == "2") || /three|huge|stor|miss|hard|predict|future/.test(theAnswer) ) {
+      } else if ((theAnswer == "2") || /three|huge|stor|miss|hard|predict|future/.test(theAnswer) ) {
         missedStories();
         return;
-      }
-      if ((theAnswer == "3") || /remov|bias|ai|AI|from/.test(theAnswer)  ) {
+      } else if ((theAnswer == "3") || /remov|bias|ai|AI|from/.test(theAnswer)  ) {
         biasAI();
         return;
+      } else {
+        didntCatchThat();
       }
     })
   }
@@ -271,7 +271,7 @@ function hearAbout() {
 
 function didntCatchThat() {
   botui.message.add({
-    delay: genDelay,
+    delay: shortDelay,
     human: false,
     content: "Sorry, I didn't catch that. Ironic, given my pitch about why bots shouldn't try to act human, eh? Anyway, let's try that again ..."
   }).then(function() {
