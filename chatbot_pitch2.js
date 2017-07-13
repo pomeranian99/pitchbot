@@ -77,7 +77,7 @@ function voiceUI() {
             botui.message.add({
               delay: longDelay,
               human: false,
-              content: "Note: There have been two designers writing columns arguing precisely this point recently. I'd want to interview them and give them shoutouts. Here's one https://uxdesign.cc/the-new-skeuomorphism-is-in-your-voice-assistant-3b14a6553a0e"
+              content: "There have been two designers writing columns arguing precisely this point recently. I'd want to interview them and quote them on the subject. Here's one https://uxdesign.cc/the-new-skeuomorphism-is-in-your-voice-assistant-3b14a6553a0e"
             }).then(function () {
               hearAbout();
             })
