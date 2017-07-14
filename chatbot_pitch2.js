@@ -4,6 +4,10 @@ var genDelay = 2500; // 2500
 var longDelay = 3500; // 3500
 var firstTimeAsked = true;
 
+// This slurry of script was written after hastily glancing at the 
+// botui.org documentation, mostly just to hassle my editor. It is
+// a hairball of repetitive stuff I wrote about as fast as I can type, alas.
+
 botui.message.add({
         content: "So, Adam! I think I have three ideas for this column."
       }).then(function () { // wait till previous message has been shown.
